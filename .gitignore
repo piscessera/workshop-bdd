@@ -2,3 +2,5 @@
 *.iml
 
 java-tdd-demo/\.idea/
+
+bdd-demo/\.idea/
