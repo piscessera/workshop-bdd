@@ -10,3 +10,5 @@ qa-robotframework/library/src/web_driver/__pycache__/
 \.DS_Store
 
 angular-tdd-demo/package-lock\.json
+
+angular-bdd-demo/package-lock\.json
