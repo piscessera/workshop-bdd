@@ -19,7 +19,7 @@ public class DisplayFeatureStepsDefinition {
 	@Given("I open link ionflix.com")
 	public void i_open_link_ionflix_com() {
 		contentService = new ContentService();
-		contentDao = new ContentDao();
+		contentDao = new ContentDaoMock();
 		contentService.setContentDao(contentDao);
 	}
 	@And("Existing data")
