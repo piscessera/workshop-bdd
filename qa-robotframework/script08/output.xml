@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190517 03:43:01.507" rpa="false">
+<suite id="s1" name="Script" source="C:\Users\Puy\bdd-workshop\qa-robotframework\script08\script.robot">
+<test id="s1-t1" name="Search">
+<kw name="Given keyword &quot;Cucumber BDD&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190517 03:43:01.781" level="INFO">Opening browser 'Chrome' to base url 'http://google.com'.</msg>
+<status status="PASS" starttime="20190517 03:43:01.781" endtime="20190517 03:43:04.619"></status>
+</kw>
+<status status="PASS" starttime="20190517 03:43:01.781" endtime="20190517 03:43:04.620"></status>
+</kw>
+<kw name="When I want to search">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css:input[name='q']</arg>
+</arguments>
+<msg timestamp="20190517 03:43:04.620" level="INFO">Clicking element 'css:input[name='q']'.</msg>
+<status status="PASS" starttime="20190517 03:43:04.620" endtime="20190517 03:43:04.658"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>Cucumber BDD</arg>
+</arguments>
+<msg timestamp="20190517 03:43:04.659" level="INFO">Sending key(s) ('Cucumber BDD',) to page.</msg>
+<msg timestamp="20190517 03:43:04.659" level="INFO">Sending keys Cucumber BDD</msg>
+<status status="PASS" starttime="20190517 03:43:04.659" endtime="20190517 03:43:04.706"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:input[name='btnK']</arg>
+</arguments>
+<status status="PASS" starttime="20190517 03:43:04.706" endtime="20190517 03:43:04.948"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css:input[name='btnK']</arg>
+</arguments>
+<msg timestamp="20190517 03:43:04.948" level="INFO">Clicking element 'css:input[name='btnK']'.</msg>
+<status status="PASS" starttime="20190517 03:43:04.948" endtime="20190517 03:43:06.599"></status>
+</kw>
+<status status="PASS" starttime="20190517 03:43:04.620" endtime="20190517 03:43:06.599"></status>
+</kw>
+<kw name="Then I will see &quot;Cucumber BDD&quot; in search box">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:input[name='q']</arg>
+</arguments>
+<status status="PASS" starttime="20190517 03:43:06.600" endtime="20190517 03:43:06.620"></status>
+</kw>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<arguments>
+<arg>css:input[name='q']</arg>
+<arg>Cucumber BDD</arg>
+</arguments>
+<msg timestamp="20190517 03:43:06.652" level="INFO">Content of text field 'css:input[name='q']' is 'Cucumber BDD'.</msg>
+<status status="PASS" starttime="20190517 03:43:06.620" endtime="20190517 03:43:06.652"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190517 03:43:06.652" endtime="20190517 03:43:08.734"></status>
+</kw>
+<status status="PASS" starttime="20190517 03:43:06.600" endtime="20190517 03:43:08.734"></status>
+</kw>
+<status status="PASS" starttime="20190517 03:43:01.780" endtime="20190517 03:43:08.735" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190517 03:43:01.509" endtime="20190517 03:43:08.737"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Script">Script</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
