@@ -12,3 +12,9 @@ qa-robotframework/library/src/web_driver/__pycache__/
 angular-tdd-demo/package-lock\.json
 
 angular-bdd-demo/package-lock\.json
+
+bdd-demo-2/\.idea/
+
+bdd-demo-2/\.settings/
+
+bdd-demo-2/target/
